@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <title>Document</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+  <div class="wrapper">
+    <!-- logo start -->
+    <div class="logo">
+      <div class="container">
+        <p> IMDB <span>Clone</span></p>
+      </div>
+
+    </div>
+    <!-- logo end -->
+    <div class="search-container">
+      <div class="search-element">
+        <h3>Search Movie - </h3>
+        <input type="text" class="form-control" placeholder="Enter Movie Name .. " id="movie-search-box"
+          onkeyup="findMovies()" onclick="findMovies()">
+          <div class="search-list" id="search-list">
+            <!-- list item will be added here with the help of js -->
+
+          </div>
+      </div>
+    </div>
+
+<!-- search-container end -->
+
+<!-- result-container start -->
+<div class="container">
+  <div class="result-container">
+    <div class="result-grid" id="result-grid"></div>
+  </div>
+</div>
+  </div>
+  <script src="./script.js"></script>
+</body>
+
+</html>
